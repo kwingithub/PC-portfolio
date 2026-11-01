@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#17191b"><meta name="description" content="KW 的私人电脑。探索研究、设计与创作，一份千禧年风格的交互作品集。">
+<title>KW · STILL ONLINE</title>
+<link rel="icon" href="assets/icons/desktop.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="xp.css">
+<script src="content.js" defer></script><script src="i18n.js" defer></script><script src="app.js" defer></script>
+</head>
+<body>
+<main class="scene">
+<header class="scene-top"><span>KW / PERSONAL COMPUTER</span><div class="preferences" id="outerPreferences"></div></header>
+<section class="computer" aria-label="KW 的个人电脑">
+<div class="monitor-top"><span></span></div>
+<div class="monitor">
+<div class="bezel"><div class="screen" id="screen">
+<div class="desktop" id="desktop" inert>
+<nav class="desktop-icons" aria-label="桌面应用"></nav>
+<div id="windows" aria-live="polite"></div>
+<div class="start-menu" id="startMenu" hidden><div class="start-user"><div class="avatar">KW</div><div><b>KW</b></div></div><div id="startApps"></div><div class="start-footer"><button id="lockButton"><img src="assets/icons/power.svg" alt=""> 锁定电脑</button></div></div>
+<footer class="taskbar"><button class="start-button" id="startButton" aria-expanded="false"><span class="four-squares"><i></i><i></i><i></i><i></i></span><em>start</em></button><button class="show-desktop" id="showDesktop" aria-label="显示桌面"><img src="assets/icons/desktop.svg" alt=""></button><div class="tasks" id="tasks"></div><div class="system-tray"><div class="preferences" id="trayPreferences"></div><span class="tray-status" title="系统运行中"></span><time id="clock"></time></div></footer>
+</div>
+<div class="login-layer xp-login" id="loginLayer">
+  <div class="xp-login-top"></div>
+  <div class="xp-login-main"><div class="xp-login-brand"><div class="xp-logo"><span class="xp-flag" aria-hidden="true"><i></i><i></i><i></i><i></i></span><div><small>Microsoft</small><strong>Windows<span>xp</span></strong></div></div><p data-text="loginPrompt"></p></div><div class="login-divider"></div>
+  <form id="loginForm" class="xp-account"><div class="account-tile"><img src="assets/xp/user.png" alt=""><div class="account-fields"><h2 id="accountName">KW</h2><label for="password" data-text="password"></label><div class="password-row"><input id="password" type="password" autocomplete="off" aria-describedby="passwordHint loginError"><button type="submit" data-label="login">➜</button><button id="fillPassword" type="button" data-label="hint">?</button></div><div id="passwordHint"></div><div id="loginError" role="alert"></div></div></div></form></div>
+  <div class="xp-login-footer"><button id="loginPower"><img src="assets/icons/power.svg" alt=""><span data-text="shutdown"></span></button><span id="loginUserLabel">KW</span></div>
+</div>
+<div class="boot-layer xp-boot" id="bootLayer" hidden><div class="xp-logo"><span class="xp-flag" aria-hidden="true"><i></i><i></i><i></i><i></i></span><div><small>Microsoft</small><strong>Windows<span>xp</span></strong></div></div><div class="boot-progress"><span><i></i><i></i><i></i></span></div><p id="bootMessage" data-text="loggingIn"></p><div class="xp-boot-footer"><span>KW</span><span>Microsoft®</span></div></div>
+<div class="off-layer" id="offLayer" hidden><button id="turnOn" data-text="powerOn"></button></div>
+<div class="scanlines" aria-hidden="true"></div><div id="toast" class="toast" role="status" hidden></div>
+</div></div>
+<div class="monitor-controls"><div class="brand">KW<span>PERSONAL SYSTEM</span></div><div class="speaker-grille"></div><div class="hardware"><button id="contrastToggle" title="切换扫描线效果" aria-label="切换扫描线效果">−</button><button id="brightnessToggle" title="调节屏幕亮度" aria-label="调节屏幕亮度">+</button><span class="power-led"></span><button class="power-button" id="powerButton" aria-label="关闭电源"><img src="assets/icons/power.svg" alt=""></button></div></div>
+</div><div class="computer-base"><div class="drive"><span></span><i></i></div><div class="base-label">MULTIMEDIA PERSONAL COMPUTER</div><div class="disc-drive"><span></span><i></i></div></div>
+</section>
+<footer class="scene-footer"><span>© <span id="year"></span> KW</span><span data-text="copyright"></span></footer>
+</main>
+</body></html>

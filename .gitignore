@@ -1,0 +1,26 @@
+# Local operating system / editor files
+.DS_Store
+.AppleDouble
+._*
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.tmp
+*.log
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+.openai/
+
+# Dependencies / temporary exports (dist IS the website source)
+node_modules/
+coverage/
+exports/
+*.zip
+*.tar.gz
+
+# Original encrypted audio stays outside the public repository
+*.ncm
